@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: uppercase;
+}
+
+html {
+  margin: calc(100vw - 100%);
+}
+
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 140px;
+  letter-spacing: 70px;
+}
+
+.link {
+  color: black;
+  text-transform: initial;
+  text-decoration: underline;
+  margin-top: 50px;
+  float: right;
+}
+
+.linkS {
+  color: black;
+  text-transform: initial;
+  text-decoration: underline;
+}
+
+.border {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+title {
+  text-align: left;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.description {
+  text-transform: initial;
+  font-size: 15px;
+}
+
+p.legend {
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: initial;
+}
+
+.call_to-action {
+  background-color: black;
+  font-weight: 600;
+  padding: 5% 33% 5% 33%;
+  white-space: nowrap;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-but {
+  background: transparent;
+  padding: 3% 20% 3% 20%;
+}
+
+.play-button {
+  z-index: 100;
+  position: relative;
+  left: 40%;
+}
+
+.vertical-p {
+  writing-mode: vertical-lr;
+}
+
+/* GRID IMAGES */
+
+.contenedor1 {
+  display: grid;
+  grid-template-areas:
+    "div div1 article div2 div3"
+    "section section1 article section2 section3";
+}
+
+div.camara1 {
+  grid-area: div;
+}
+
+div.camara2 {
+  grid-area: div1;
+}
+
+div.camara3 {
+  grid-area: div2;
+}
+
+div.camara4 {
+  grid-area: div3;
+}
+
+article.center {
+  grid-area: article;
+}
+
+div.camara5 {
+  grid-area: section;
+}
+
+div.camara6 {
+  grid-area: section1;
+}
+
+div.camara7 {
+  grid-area: section2;
+}
+
+div.camara8 {
+  grid-area: section3;
+}
+
+/* GRID SERVICES*/
+
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "div article div2"
+    "section article section2";
+
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.design {
+  grid-area: div;
+}
+
+div.promote {
+  grid-area: div2;
+}
+
+article.we-do {
+  grid-area: article;
+}
+
+div.sell {
+  grid-area: section;
+}
+
+div.develope {
+  grid-area: section2;
+}
+
+.redes,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100px;
+}
+
+.enviar {
+  position: relative;
+  left: 88%;
+}
+
+textarea {
+  padding: 25px 0px 25px 0px;
+}
+
+.data {
+  width: 400px;
+}
+
+.galeria {
+  position: relative;
+  left: 0;
+  right: 0;
+}
