@@ -97,6 +97,7 @@ p.legend {
 
 .vertical-p {
   writing-mode: vertical-lr;
+  transform: rotate(180deg);
 }
 
 /* GRID IMAGES */
