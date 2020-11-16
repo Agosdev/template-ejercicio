@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -9,44 +8,9 @@ html {
   margin: calc(100vw - 100%);
 }
 
-ul,
-li,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   font-size: 140px;
   letter-spacing: 70px;
-}
-
-.link {
-  color: black;
-  text-transform: initial;
-  text-decoration: underline;
-  margin-top: 50px;
-  float: right;
-}
-
-.linkS {
-  color: black;
-  text-transform: initial;
-  text-decoration: underline;
-}
-
-.border {
-  margin: 0;
-  padding: 0;
-  border: 2px solid black;
-}
-
-li {
-  list-style: none;
-}
-
-title {
-  text-align: left;
 }
 
 h2 {
@@ -59,6 +23,20 @@ h3 {
 
 p {
   font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.contact_media {
+  text-align: center;
+}
+
+.border {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
 }
 
 .description {
@@ -79,6 +57,14 @@ p.legend {
   white-space: nowrap;
 }
 
+.link {
+  color: black;
+  text-transform: initial;
+  text-decoration: underline;
+  margin-top: 50px;
+  float: right;
+}
+
 .row {
   margin: 0;
   padding: 0;
@@ -95,9 +81,16 @@ p.legend {
   left: 40%;
 }
 
-.vertical-p {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
+.galeria {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.text-gallery {
+  position: relative;
+  bottom: 400px;
+  left: 1000px;
 }
 
 /* GRID IMAGES */
@@ -176,6 +169,11 @@ div.develope {
   grid-area: section2;
 }
 
+.vertical-p {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
 .redes,
 form {
   display: flex;
@@ -186,11 +184,6 @@ input {
   width: 100px;
 }
 
-.enviar {
-  position: relative;
-  left: 88%;
-}
-
 textarea {
   padding: 25px 0px 25px 0px;
 }
@@ -199,8 +192,199 @@ textarea {
   width: 400px;
 }
 
-.galeria {
+.enviar {
   position: relative;
-  left: 0;
-  right: 0;
+  left: 88%;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1125px) {
+  h1 {
+    font-size: calc(90px - 100%);
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .contact_media {
+    margin-left: 8px;
+    text-align: left;
+  }
+  .call_to-action {
+    width: 90%;
+    padding: 5% 20% 5% 20%;
+  }
+
+  .contenedor1 {
+    display: grid;
+    grid-template-areas:
+      "div article section "
+      "div1 article section1 "
+      "div2 article section2 "
+      "div3 article  section3";
+  }
+
+  .media_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .play-button {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 300px;
+  }
+
+  .text-gallery {
+    left: 3%;
+    bottom: 10%;
+    white-space: nowrap;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  form {
+    margin: 20px;
+  }
+
+  .redes {
+    margin: 0;
+  }
+
+  .link {
+    text-align: center;
+  }
+
+  .enviar {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+}
+/* SMARTPHONE */
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: calc(50px - 100%);
+    letter-spacing: 40px;
+    font-weight: 700;
+  }
+
+  h2,
+  h3 {
+    font-size: 30px;
+  }
+
+  .contact_media {
+    margin-left: 8px;
+    text-align: left;
+  }
+  .call_to-action {
+    width: 50%;
+    padding: 5% 5% 5% 5%;
+    font-size: calc(4vh - 100%);
+    position: relative;
+    left: 15%;
+  }
+
+  .images_mobile {
+    height: 150px;
+    width: 150px;
+  }
+
+  .tab-but {
+    width: 70px;
+    padding: 10px;
+    position: relative;
+    left: 20px;
+  }
+
+  .team_mobile {
+    flex-direction: column;
+  }
+
+  .contenedor1 {
+    display: grid;
+    grid-template-areas:
+      "div article section "
+      "div1 article section1 "
+      "div2 article section2 "
+      "div3 article  section3";
+  }
+
+  .play-button {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 200px;
+  }
+  .video {
+    margin: 0;
+    width: 470px;
+    height: 300px;
+  }
+
+  .text-gallery {
+    top: 10px;
+    left: 10px;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-areas:
+      "article article"
+      "div div"
+      "section section"
+      "div2 div2"
+      "section2 section2";
+    grid-template-columns: 100%;
+  }
+  .form_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  .data {
+    width: 150px;
+  }
+
+  textarea {
+    width: 350px;
+  }
+
+  .link {
+    text-align: center;
+  }
+
+  .enviar {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .media_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prices_mobile {
+    flex-direction: column;
+  }
 }

@@ -11,14 +11,14 @@
     <!-- navegador -->
     <header>
         <nav class="row border">
-            <h1 class="col-lg-8">Brutal</h1>
+            <h1 class="col-lg-8 col-sm-6">Brutal</h1>
             <ul class="col-lg-2 border">
                 <li class="mt-4 pl-2 border">Features</li>
                 <li class="mt-4 pl-2 border">Services</li>
                 <li class="mt-4 pl-2 border">Prices</li>
             </ul>
             <ul class="col-lg-2 border">
-              <li class="mt-5 pt-4 text-center">Contact</li>
+              <li class="mt-5 pt-4 contact_media">Contact</li>
             </ul>
         </nav>
     </header>
@@ -39,7 +39,7 @@
                     <p>responsive</p>
                     <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
                  <td width="25%"> 
-                    <button class="tab-but float-right mr-5">Read More</button>
+                    <button class="tab-but">Read More</button>
                  </td>
             </td class="border">
                  <td class="border" colspan="2"><h3 class="p-4">There are features</h3>
@@ -49,7 +49,7 @@
           <td class="border" rowspan="2">
                 <p>bootstrapv4</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
-          <td width="25%"> <button class="tab-but float-right mr-5">Read More</button></td>
+          <td> <button class="tab-but">Read More</button></td>
           </td>
           <td class="border">
                 <p>html5</p>
@@ -66,37 +66,37 @@
     <!-- seccion con fotos -->         
     <section class="contenedor1">
             <div class="camara1">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img  class="images_mobile " src="assets/portrait.jpg" width="200px" />
             </div>
             <div class="camara2">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img  class="images_mobile " src="assets/portrait.jpg" width="200px" />
             </div>
             <div class="camara3">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img  class="images_mobile " src="assets/portrait.jpg" width="200px" />
             </div>
             <div class="camara4">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img class="images_mobile "  src="assets/portrait.jpg" width="200px" />
             </div>
       <article class="center mt-5 text-center">
         <h2>There are products</h2>
       </article>
             <div class="camara5">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img  class="images_mobile " src="assets/portrait.jpg" width="200px" />
             </div>
             <div class="camara6">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img  class="images_mobile " src="assets/portrait.jpg" width="200px" />
             </div>
             <div class="camara7">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img  class="images_mobile " src="assets/portrait.jpg" width="200px" />
             </div>
             <div class="camara8">
-              <img src="assets/portrait.jpg" width="200px" />
+              <img class="images_mobile "  src="assets/portrait.jpg" width="200px" />
             </div>
     </section>    
     <!-- seccion de precios -->  
-  <section class=" d-flex justify-content-around align-items-center">
+  <section class="prices_mobile d-flex justify-content-around align-items-center">
         <div class="border col-lg-3 ">
-              <h2 class="m-4">There are prices</h2>
+              <h2 class=" m-4">There are prices</h2>
         </div>
         <div class="border text-center col-lg-3 ">
               <h2 class=" mt-5 pt-5" >$10</h2>
@@ -113,21 +113,21 @@
    </section>  
    <!-- seccion de video y carrusel de imagenes -->
    <section class="galeria text-center">
-       <div class="d-flex align-items-center">
-            <section  class=" col-lg-3">
-                <h2 class="ml-5">There is a video</h2>
-            </section>
-                 <button class="play-button text-uppercase p-3" type="button">Play</button>
-            <iframe class="col-lg-9" width="750" height="510" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="media_mobile d-flex align-items-center">
+              <section  class="col-lg-2">
+                  <h2>There is a video</h2>
+              </section>
+              <button class="play-button text-uppercase p-3" type="button">Play</button>
+              <iframe class="video col-lg-9" width="750" height="510" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-            <div class="d-flex align-items-center col-lg-9">
-              <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class=" d-flex align-items-center">
+              <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade  col-lg-9" data-ride="carousel">
                   <div class="carousel-inner" role="listbox">
                       <div class="carousel-item active">
-                           <img class="d-block w-110" src="assets/arq.jpg" alt="First slide" height="510">
+                           <img class="d-block w-100" src="assets/arq.jpg" alt="First slide" height="510">
                       </div>
                       <div class="carousel-item">
-                           <img class="d-block w-110" src="assets/arq.jpg"  alt="Second slide" height="510">
+                           <img class="d-block w-100" src="assets/arq.jpg"  alt="Second slide" height="510">
                       </div>
                   </div>
                      <a class="carousel-control-prev" href="#carouselFadeExampleIndicators" role="button" data-slide="prev">
@@ -138,55 +138,55 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                       </a>
-              </div>
-              <div class="col-lg-3">
-                  <h2 class="ml-5">There is a gallery</h2>
-              </div>
-         </div>
+                      <section class=" col-lg-2">
+                          <h2 class="text-gallery">There is a gallery</h2>
+                        </section>
+             </div>
+            </div>
     </section>
       <!-- seccion de servicios -->
     <section class="contenedor">
           <div class="design border">
               <h4>We design</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur.</p> <a class="border linkS" href="facebook.com">Facebook</a> 
+              <p class="description">Lorem ipsum dolor sit amet consectetur.</p> <a class="border link" href="facebook.com">Facebook</a> 
           </div>
          <div class="sell border">
-              <h4>We sell</h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur.</p> <a class="border linkS" href="facebook.com">Facebook</a> 
+              <h4>We sell</h4> 
+              <p class="description">Lorem ipsum dolor sit amet consectetur.</p> <a class="border link" href="facebook.com">Facebook</a> 
           </div>
         <article class="we-do border">
               <h2 class="text-center m-5 p-5">We do things</h2>
         </article>
         <div class="promote border">
              <h4>we develope</h4>
-             <p class="description">Lorem ipsum dolor sit amet consectetur.</p> <a class="border linkS" href="facebook.com">Facebook</a> 
+             <p class="description">Lorem ipsum dolor sit amet consectetur.</p> <a class="border link" href="facebook.com">Facebook</a> 
         </div>
         <div class="develope border">
             <h4>We promote</h4>
-            <p class="description">Lorem ipsum dolor sit amet consectetur.</p><a class="border linkS" href="facebook.com">Facebook</a>
+            <p class="description">Lorem ipsum dolor sit amet consectetur.</p><a class="border link" href="facebook.com">Facebook</a>
         </div>
     </section>
       <!-- seccion team -->
-  <section class=" d-flex justify-content-around align-items-center">
+  <section class="team_mobile d-flex justify-content-around align-items-center">
     <div class="border col-lg-3 ">
           <h2 class="m-5 text-center">There is a team</h2>
     </div>
     <div class="border text-center col-lg-3 ">
       <p class="vertical-p border pt-5">marketer</p>
-                <img class="border rounded-circle" src="assets/portrait.jpg" width="190px"/>
+                <img class="border images_mobile img-fluid rounded-circle" src="assets/portrait.jpg" width="190px"/>
     </div>
     <div class="border text-center col-lg-3 ">
       <p class="vertical-p border pt-5">designer</p>
-                <img class="border rounded-circle" src="assets/portrait.jpg" width="190px"/>
+                <img class="border images_mobile img-fluid rounded-circle" src="assets/portrait.jpg" width="190px"/>
     </div>        
     <div class="border text-center col-lg-3 ">
       <p class="vertical-p border pt-5">developer</p>
-                <img class="border rounded-circle" src="assets/portrait.jpg" width="190px"/> 
+                <img class="border images_mobile img-fluid rounded-circle" src="assets/portrait.jpg" width="190px"/> 
     </div>
 </section> 
       <!-- formulario -->
-      <section class="d-flex">
-             <div class="redes border col-lg-2">
+      <section class="d-flex align-items-center form_mobile">
+             <div class="redes border col-lg-2 ">
                   <a class="border link mt-3" href="facebook.com">Facebook</a> 
                   <a class="border link mt-3" href="twitter.com">Twitter</a>
                   <a class="border link mt-3" href="youtube.com">Youtube</a>
@@ -195,9 +195,9 @@
                   <h2 class="text-center border">There is a form</h2>
             </div>
             <form class="col-lg-8 mt-4">
-                <div >
-                    <input class="data mr-3 mb-3" type="text" placeholder="Nombre" />
-                    <input class="data ml-3 mb-3" type="email" placeholder="Email" required />
+                <div>
+                    <input class="data m-2" type="text" placeholder="Nombre" />
+                    <input class="data m-2" type="email" placeholder="Email" required />
                 </div>
                 <textarea placeholder="Mensaje"></textarea>
                 <input class="enviar mt-3" type="submit"/>
