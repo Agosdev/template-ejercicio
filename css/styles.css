@@ -311,10 +311,15 @@ textarea {
   .contenedor1 {
     display: grid;
     grid-template-areas:
-      "div article section "
-      "div1 article section1 "
-      "div2 article section2 "
-      "div3 article  section3";
+      "div article section"
+      "div1 article section1"
+      "div2 article section2"
+      "div3 article section3";
+  }
+
+  article.center {
+    grid-area: article;
+    display: none;
   }
 
   .play-button {
@@ -325,7 +330,7 @@ textarea {
   }
   .video {
     margin: 0;
-    width: 470px;
+    width: 400px;
     height: 300px;
   }
 
@@ -352,6 +357,7 @@ textarea {
       "section2 section2";
     grid-template-columns: 100%;
   }
+
   .form_mobile {
     display: flex;
     flex-direction: column;
