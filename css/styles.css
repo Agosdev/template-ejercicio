@@ -293,6 +293,7 @@ textarea {
   }
 
   .images_mobile {
+    margin-left: 12px;
     height: 150px;
     width: 150px;
   }
@@ -392,5 +393,6 @@ textarea {
 
   .prices_mobile {
     flex-direction: column;
+    text-align: center;
   }
 }
