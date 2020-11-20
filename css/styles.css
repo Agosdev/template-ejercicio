@@ -270,20 +270,33 @@ textarea {
 
 @media only screen and (max-width: 767px) {
   h1 {
-    font-size: calc(50px - 100%);
+    font-size: calc(45px - 100%);
     letter-spacing: 40px;
     font-weight: 700;
   }
 
-  h2,
-  h3 {
-    font-size: 30px;
+  li {
+    text-align: center;
+    font-size: 15px;
   }
 
-  .contact_media {
-    margin-left: 8px;
-    text-align: left;
+  li:hover {
+    color: red;
   }
+
+  h2,
+  h3 {
+    font-size: 25px;
+  }
+
+  p.legend {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav {
+  }
+
   .call_to-action {
     width: 50%;
     padding: 5% 5% 5% 5%;
@@ -300,9 +313,7 @@ textarea {
 
   .tab-but {
     width: 70px;
-    padding: 10px;
-    position: relative;
-    left: 20px;
+    padding: 15px;
   }
 
   .team_mobile {
@@ -329,15 +340,14 @@ textarea {
     right: 0;
     top: 200px;
   }
-  .video {
-    margin: 0;
-    width: 400px;
-    height: 300px;
-  }
 
   .text-gallery {
     top: 10px;
     left: 10px;
+  }
+
+  .carrusel {
+    flex-direction: column;
   }
 
   .carousel {
@@ -369,11 +379,11 @@ textarea {
   }
 
   .data {
-    width: 150px;
+    width: 100px;
   }
 
   textarea {
-    width: 350px;
+    width: 300px;
   }
 
   .link {
@@ -386,11 +396,15 @@ textarea {
     right: 0;
   }
 
+  .video {
+    margin: 0;
+    width: 350px;
+    height: 300px;
+  }
   .media_mobile {
     display: flex;
     flex-direction: column;
   }
-
   .prices_mobile {
     flex-direction: column;
     text-align: center;

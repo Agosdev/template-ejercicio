@@ -10,15 +10,15 @@
   <body>
     <!-- navegador -->
     <header>
-        <nav class="row border">
+        <nav class="row d-flex align-items-center border">
             <h1 class="col-lg-8 col-sm-6">Brutal</h1>
-            <ul class="col-lg-2 border">
-                <li class="mt-4 pl-2 border">Features</li>
-                <li class="mt-4 pl-2 border">Services</li>
-                <li class="mt-4 pl-2 border">Prices</li>
+            <ul class="col-lg-2 col-sm-3 border">
+                <li class="p-3 border">Features</li>
+                <li class="p-3 border">Services</li>
+                <li class="p-3 border">Prices</li>
             </ul>
-            <ul class="col-lg-2 border">
-              <li class="mt-5 pt-4 contact_media">Contact</li>
+            <ul class="col-lg-2 col-sm-3 border">
+              <li class="p-3">Contact</li>
             </ul>
         </nav>
     </header>
@@ -33,7 +33,7 @@
           </div>
     </section>
     <!-- tabla con lenguajes -->
-    <table class="border d-none d-sm-block" width="100%" cellspacing="0" cellpadding="0">
+    <table class="border table-responsive-sm" width="100%" cellspacing="0" cellpadding="0">
         <tr>
             <td class="border" width="20%">
                     <p>responsive</p>
@@ -42,59 +42,28 @@
                     <button class="tab-but">Read More</button>
                  </td>
             </td class="border">
-                 <td class="border" colspan="2"><h3 class="p-4">There are features</h3>
-            </td>
+                 <td class="border" colspan="2">
+                  <h3 class="p-4">There are features</h3>
+                 </td>
        </tr>
        <tr>
-          <td class="border" rowspan="2">
+          <td class="border" width="30%" rowspan="2">
                 <p>bootstrapv4</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
           <td> <button class="tab-but">Read More</button></td>
           </td>
-          <td class="border" width="25%">
+          <td class="border" width="20%">
                 <p>html5</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
                 <button class="tab-but mb-4">Read More</button>
            </td>
-          <td class="border">
+          <td class="border" width="30%">
                 <p>css3</p>
                 <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
                 <button class="tab-but mb-4">Read More</button>
           </td>
       </tr>
     </table>
-        <!-- tabla con lenguajes mobile -->
-        <div class="border d-sm-none d-block ml-3">
-          <h3 class="text-center mb-4">There are features</h3>
-          <table width="90%" cellspacing="0" cellpadding="0" > 
-            <tr class="border">
-              <td class="border">Responsive</td>
-              <td class="border">Bootstrapv4</td>    
-            </tr>
-            <tr class="border">
-              <td class="border description">Lorem ipsum dolor sit amet consectetur.</td>
-              <td class="border description">Lorem ipsum dolor sit amet consectetur.</td>
-            </tr>
-            <tr class="border">
-              <td ><button class="m-3">Read More</button></td>
-              <td ><button class="m-3">Read More</button></td>
-            </tr>  
-          </table>
-          <table width="90%" cellspacing="0" cellpadding="0">
-            <tr class="border">  
-              <td class="border">Html5</td>
-              <td class="border">Css3</td>
-            </tr>
-            <tr class="border">
-              <td class="border description">Lorem ipsum dolor sit amet consectetur.</td>
-              <td class="border description">Lorem ipsum dolor sit amet consectetur.</td>
-            </tr>
-            <tr class="border">
-              <td ><button class="m-3">Read More</button></td>
-              <td ><button class="m-3">Read More</button></td>
-            </tr>  
-          </table>
-          </div>
     <!-- seccion con fotos -->   
     <h2 class="d-sm-none d-block text-center">There are products</h2>      
     <section class="contenedor1">
@@ -153,8 +122,8 @@
               <button class="play-button text-uppercase p-3" type="button">Play</button>
               <iframe class="video col-lg-9" width="750" height="510" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class=" d-flex align-items-center">
-              <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade  col-lg-9" data-ride="carousel">
+          <div class="carrusel d-flex align-items-center">
+              <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade col-lg-9" data-ride="carousel">
                   <div class="carousel-inner" role="listbox">
                       <div class="carousel-item active">
                            <img class="d-block w-100" src="assets/arq.jpg" alt="First slide" height="510">
@@ -171,10 +140,10 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                       </a>
-                      <section class=" col-lg-2">
-                          <h2 class="text-gallery">There is a gallery</h2>
-                        </section>
              </div>
+             <section class="col-lg-2">
+                <h2 >There is a gallery</h2>
+              </section>
             </div>
     </section>
       <!-- seccion de servicios -->
@@ -201,19 +170,17 @@
     </section>
       <!-- seccion team -->
   <section class="team_mobile d-flex justify-content-around align-items-center">
-    <div class="border col-lg-3 ">
-          <h2 class="m-5 text-center">There is a team</h2>
-    </div>
+          <h2 class="m-4 text-center">There is a team</h2>
+          <p class="vertical-p border">marketer</p>
     <div class="border text-center col-lg-3 ">
-      <p class="vertical-p border pt-5">marketer</p>
                 <img class="border images_mobile img-fluid rounded-circle" src="assets/portrait.jpg" width="190px"/>
     </div>
+    <p class="vertical-p border">designer</p>
     <div class="border text-center col-lg-3 ">
-      <p class="vertical-p border pt-5">designer</p>
                 <img class="border images_mobile img-fluid rounded-circle" src="assets/portrait.jpg" width="190px"/>
     </div>        
+    <p class="vertical-p border">developer</p>
     <div class="border text-center col-lg-3 ">
-      <p class="vertical-p border pt-5">developer</p>
                 <img class="border images_mobile img-fluid rounded-circle" src="assets/portrait.jpg" width="190px"/> 
     </div>
 </section> 
